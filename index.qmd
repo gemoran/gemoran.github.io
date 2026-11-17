@@ -29,6 +29,8 @@ about:
 
 :::{#hero-heading}
 
+### About
+
 I am a tenure-track Assistant Professor in the [Rutgers Statistics](https://statistics.rutgers.edu/) Department. I am also a visiting researcher at the [Flatiron Institute](https://users.flatironinstitute.org/~lsaul/ml_ccm.html).
 
 Previously, I was a postdoc at the Columbia Data Science Institute, working with [David Blei](http://www.cs.columbia.edu/~blei/).  I received my PhD in Statistics from the University of Pennsylvania, advised by [Edward George](https://statistics.wharton.upenn.edu/profile/edgeorge/) and [Veronika Rockova](http://veronikarock.com/).
@@ -38,18 +40,19 @@ My recent research interests include:
 - developing identifiable and interpretable deep generative models;
 - improved tools for calibrated model criticism.
 
+### Working with me
 
-### Rutgers PhD students
+#### Rutgers PhD students
 
 Send me an email if you'd like to chat about research!
 
-### Prospective PhD students
+#### Prospective PhD students
 
 Please apply to the Rutgers Statistics PhD program and mention my name. Unfortunately I don't have the bandwidth to reply to every email.
 
-### Masters of Data Science students
+#### Masters of Data Science students
 
-#### Capstone Projects
+##### Capstone Projects
 
 Rutgers MSDS students can use a final project from one of my MSDS classes as their capstone.  
 
