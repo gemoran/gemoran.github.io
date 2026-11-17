@@ -1,0 +1,83 @@
+project:
+  type: website
+  output-dir: docs
+  render:  # Blog hidden for now: delete the "!blog/" line (and uncomment Blog in the navbar) to bring it back
+    - "*.qmd"
+    - "!blog/"
+  resources:  # files copied to docs/ as-is (Quarto doesn't detect links in the about: block)
+    - cv/moran_cv.pdf
+    - CNAME  # tells GitHub Pages to serve the site at gemma-moran.com
+  pre-render:  # Generate research/publications.yml (used by research/pub-listing.qmd) from papers.bib
+    - python research/bib_to_yml.py research/papers.bib research/publications.yml
+    
+# Meta
+description-meta: "Gemma Moran's Website"
+author-meta: "Gemma Moran"
+
+website:
+  title: "Gemma Moran"
+  image: "/files/2026-headshot.png"
+  description: "Gemma Moran is an assistant professor of statistics at Rutgers"
+ 
+  navbar:
+    background: light  # You can change the background color here
+
+    left:   # You can comment out all navigation items here if you just like to keep the index page only
+#      - text: Home
+#        href: index.qmd
+      - text: About    
+        menu: 
+          - text: CV
+            href: cv/moran_cv.pdf       
+      - text: Research
+        menu:
+          - text: Publications  # Automatically generated from research/papers.bib
+            href: research/pub-listing.qmd                             
+      - text: Teaching # Comment the Teaching part out to remove the Teaching page
+        href: teaching/teaching.qmd
+      - text: Resources
+        href: resources/resources.qmd
+
+#      - text: Blog
+#        href: blog/index.qmd
+
+
+  page-navigation: true
+  
+  page-footer: 
+    left: "[Gemma Moran](http://www.github.com/gemoran) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    right: "Adapted from [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)"
+
+
+  draft-mode: unlinked
+  
+  repo-url: https://github.com/gemoran.github.io
+#  repo-actions: [edit, issue, source]
+  
+  open-graph: true
+  
+  twitter-card: true 
+#  card-style: summary      
+  
+  site-url: "https://gemma-moran.com"
+  
+  google-analytics:
+    tracking-id: "G-K8774M1WRH"  # Replace with your own tracking ID
+
+bibliography: research/papers.bib  # references.bib lives in research/ to enable the bibliography function
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    include-in-header: "files/includes/_academic.qmd"
+

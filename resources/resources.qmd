@@ -1,0 +1,20 @@
+---
+title: "Resources"
+subtitle: "An in-progress list of resources."
+title-block-banner: false
+---
+
+### Writing
+
+Scientific writing is an extremely important skill to develop.
+
+I regularly re-read this article -- everyone should read!
+
+- The Science of Scientific Writing by Gopen and Swan ([link](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing)).
+
+
+### Communication
+
+Learning how to present your research is also extremely important.
+
+- [Trevor Campbell](https://trevorcampbell.me/) has a great talk on [How to Explain Things](https://docs.google.com/presentation/d/13vwchlzQAZjjfiI3AiBC_kM-syI6GJKzbuZoLxgy1a4/edit?usp=sharing)

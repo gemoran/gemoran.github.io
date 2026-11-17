@@ -1,0 +1,176 @@
+- section: "Technical reports"
+  authors: "V. Shekar, V. Yu, B. J. Garcia, D. B. Gordon, <strong>G. E. Moran</strong>, D. M. Blei, L. M. Roch, A. García-Durán, M. Ani Najeeb, M. Zeile, P. W. Nega, Z. Li, M. A. Kim, E. M. Chan, A. J. Norquist, S. Friedler, J. Schrier"
+  year: 2022
+  date: 2022-01-01
+  title: "Serendipity based recommender system for perovskites material discovery: balancing exploration and exploitation across multiple models"
+  path: "https://doi.org/10.26434/chemrxiv-2022-l1wpf"
+  journal: "ChemRxiv"
+  doi: "10.26434/chemrxiv-2022-l1wpf"
+
+- section: "Peer-reviewed"
+  authors: "J. Linhart, <strong>G. E. Moran</strong>, D. Blei"
+  year: 2026
+  date: 2026-01-01
+  title: "“All Models Are Right”: The Blind Spots of Posterior Predictive Checks in Simulation-Based Inference"
+  path: "https://openreview.net/forum?id=ENJlzLVHzH"
+  journal: "NeurIPS Workshop Sim2Science: ML with Imperfect Scientific Models"
+
+- section: "Peer-reviewed"
+  authors: "G. Chatzoudis, K. D. Polyzos, Z. Li, D. Gu, <strong>G. E. Moran</strong>, H. Wang, D. N. Metaxas"
+  year: 2026
+  date: 2026-06-01
+  title: "Can Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on Vision"
+  path: "https://openaccess.thecvf.com/content/CVPR2026W/XAI4CV/html/Chatzoudis_Can_Cross-Layer_Transcoders_Replace_Vision_Transformer_Activations_An_Interpretable_Perspective_CVPRW_2026_paper.html"
+  journal: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops"
+  pages: "4016–4025"
+
+- section: "Preprint"
+  authors: "<strong>G. E. Moran</strong>, A. Krishnan"
+  year: 2026
+  date: 2026-01-01
+  title: "Nonlinear multi-study sparse factor analysis"
+  path: "https://arxiv.org/abs/2601.18128"
+  journal: "arXiv preprint arXiv:2601.18128"
+
+- section: "Preprint"
+  authors: "Z. Ke<sup>†</sup>, M. Cui<sup>†</sup>, <strong>G. Moran</strong>, J. Cabrera"
+  year: 2026
+  date: 2026-01-01
+  title: "Distributional Balancing with Machine Learning for Clinical Trial Augmentation Using Real-World Data"
+  path: "https://arxiv.org/abs/2609.23524"
+  journal: "arXiv preprint arXiv:2609.23524"
+
+- section: "Preprint"
+  authors: "S. Dutta<sup>†</sup>, <strong>G. E. Moran</strong>"
+  year: 2026
+  date: 2026-01-01
+  title: "Aggregated Posterior Predictive Checks for Generative Modeling"
+  path: "https://arxiv.org/abs/2609.20999"
+  journal: "arXiv preprint arXiv:2609.20999"
+
+- section: "Preprint"
+  authors: "M. Cui, K. Eng, J. T. Greene, Z. Ke, A. Sodagartojgi, Z. Xia, <strong>G. E. Moran</strong>, M. L. Stein"
+  year: 2026
+  date: 2026-01-01
+  title: "Stochastic weather generators for high-frequency wind vector time series"
+  path: "https://arxiv.org/abs/2606.09941"
+  journal: "arXiv preprint arXiv:2606.09941"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, B. Aragam"
+  year: 2026
+  date: 2026-01-01
+  title: "Toward Interpretable Deep Generative Models via Causal Representation Learning"
+  path: "https://doi.org/10.1080/01621459.2026.2620154"
+  journal: "Journal of the American Statistical Association"
+  volume: "121"
+  issue: "553"
+  pages: "259–275"
+  doi: "10.1080/01621459.2026.2620154"
+
+- section: "Peer-reviewed"
+  authors: "G. Chatzoudis, Z. Li, <strong>G. E. Moran</strong>, H. Wang, D. N. Metaxas"
+  year: 2026
+  date: 2026-01-01
+  title: "Beyond Interpretability: When, Why, and How Sparse Autoencoders Enable Label-Free Visual Steering"
+  path: "https://arxiv.org/abs/2506.01247"
+  journal: "Neural Information Processing Systems"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, D. M. Blei, R. Ranganath"
+  year: 2024
+  date: 2024-01-01
+  title: "Holdout predictive checks for Bayesian model criticism"
+  path: "https://doi.org/10.1093/jrsssb/qkad105"
+  journal: "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+  volume: "86"
+  issue: "1"
+  pages: "194–214"
+  doi: "10.1093/jrsssb/qkad105"
+
+- section: "Peer-reviewed"
+  authors: "S. F. Friedman, <strong>G. E. Moran</strong>, M. Rakic, A. Phillipakis"
+  year: 2024
+  date: 2024-01-01
+  title: "Genetic Architectures of Medical Images Revealed by Registration of Multiple Modalities"
+  path: "https://doi.org/10.1177/11779322241282489"
+  journal: "Bioinformatics and Biology Insights"
+  volume: "18"
+  doi: "10.1177/11779322241282489"
+
+- section: "Peer-reviewed"
+  authors: "K. Donhauser, K. Ulicna, <strong>G. E. Moran</strong>, A. Ravuri, K. Kenyon-Dean, C. Eastwood, J. Hartford"
+  year: 2025
+  date: 2025-01-01
+  title: "Towards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation models"
+  path: "https://proceedings.mlr.press/v267/donhauser25a.html"
+  journal: "International Conference on Machine Learning"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, V. Ročková, E. I. George"
+  year: 2019
+  date: 2019-01-01
+  title: "Variance prior forms for high-dimensional Bayesian variable selection"
+  path: "https://doi.org/10.1214/19-BA1149"
+  journal: "Bayesian Analysis"
+  volume: "14"
+  issue: "4"
+  pages: "1091–1119"
+  doi: "10.1214/19-BA1149"
+
+- section: "Peer-reviewed"
+  authors: "R. Bai<sup>&#42;</sup>, <strong>G. E. Moran</strong><sup>&#42;</sup>, J. L. Antonelli<sup>&#42;</sup>, Y. Chen, M. R. Boland"
+  year: 2022
+  date: 2022-01-01
+  title: "Spike-and-slab group lassos for grouped regression and sparse generalized additive models"
+  path: "https://doi.org/10.1080/01621459.2020.1765784"
+  journal: "Journal of the American Statistical Association"
+  volume: "117"
+  issue: "537"
+  pages: "184–197"
+  doi: "10.1080/01621459.2020.1765784"
+
+- section: "Peer-reviewed"
+  authors: "V. Ročková, <strong>G. Moran</strong>, E. George"
+  year: 2016
+  date: 2016-01-01
+  title: "Determinantal regularization for ensemble variable selection"
+  path: "https://proceedings.mlr.press/v51/rockova16.html"
+  journal: "Artificial Intelligence and Statistics"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, V. Ročková, E. I. George"
+  year: 2021
+  date: 2021-01-01
+  title: "Spike-and-slab lasso biclustering"
+  path: "https://doi.org/10.1214/20-AOAS1385"
+  journal: "The Annals of Applied Statistics"
+  volume: "15"
+  issue: "1"
+  pages: "148–173"
+  doi: "10.1214/20-AOAS1385"
+  code: "https://github.com/gemoran/SSLB-examples"
+  software: "https://github.com/gemoran/SSLB"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, D. Sridhar, Y. Wang, D. M. Blei"
+  year: 2022
+  date: 2022-01-01
+  title: "Identifiable Deep Generative Models via Sparse Decoding"
+  path: "https://openreview.net/forum?id=vd0onGWZbE"
+  journal: "Transactions on Machine Learning Research"
+  code: "https://github.com/gemoran/sparse-vae-code"
+  software: "https://github.com/gemoran/sparse-vae"
+
+- section: "Peer-reviewed"
+  authors: "<strong>G. E. Moran</strong>, J. P. Cunningham, D. M. Blei"
+  year: 2023
+  date: 2023-01-01
+  title: "The posterior predictive null"
+  path: "https://doi.org/10.1214/22-BA1313"
+  journal: "Bayesian Analysis"
+  volume: "18"
+  issue: "4"
+  pages: "1071–1097"
+  doi: "10.1214/22-BA1313"
+  code: "https://github.com/gemoran/ppn-code"

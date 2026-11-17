@@ -1,0 +1,70 @@
+/* ============================================================
+   Publication listing styles (used by pub-listing.ejs)
+   ============================================================ */
+
+.pub-listing {
+  margin-top: 0.5rem;
+}
+
+/* Key for author marks (* equal contribution, † student advisee) */
+.pub-key {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.pub-authors sup,
+.pub-key sup {
+  font-size: 0.9em;
+  margin-left: 0.05em;
+}
+
+/* One bullet per paper */
+.pub-item {
+  display: list-item;
+  list-style: disc;
+  margin: 0 0 1rem 1.25rem;
+  line-height: 1.5;
+}
+
+.pub-item p {
+  margin: 0;
+}
+
+/* “Title” */
+.pub-title {
+  font-weight: 500;
+}
+
+.pub-title a {
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  text-decoration: underline;
+}
+
+.pub-badge {
+  vertical-align: text-bottom;
+  margin-left: 0.15rem;
+}
+
+/* [code] [pdf] ... */
+.pub-links {
+  margin-left: 0.15rem;
+  font-size: 0.85em;
+}
+
+.pub-link {
+  white-space: nowrap;
+  margin-right: 0.15rem;
+}
+
+/* Award / Coverage / Invited presentation */
+.pub-extra {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.pub-label {
+  font-weight: 600;
+}

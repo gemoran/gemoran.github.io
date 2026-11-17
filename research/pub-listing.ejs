@@ -1,0 +1,54 @@
+<%
+/*
+  pub-listing.ejs — Quarto custom listing template, one bullet per paper:
+
+    • “Title”                                   (links to item.path)
+      G. E. Moran, D. M. Blei [code] [pdf]      (links from optional bib fields)
+      Journal, Year.
+      Award / Coverage / Invited presentation   (only if present)
+
+  Keep the HTML flush-left, with no blank lines inside an item: Quarto passes
+  this output through Pandoc as Markdown, where indentation and blank lines
+  break the surrounding <div>s.
+
+  metadataAttrs(item) on each item and class="list" on the wrapper are
+  required by Quarto's listing JavaScript (sorting/filtering).
+
+  Note: Quarto's templates follow lodash, the reverse of standard EJS:
+  the "=" output tag inserts raw HTML, the "-" output tag HTML-escapes.
+*/
+
+// Optional link fields → label shown in [brackets], in display order.
+const LINKS = [
+  ["pdf", "pdf"], ["preprint", "preprint"], ["code", "code"], ["software", "software"],
+  ["github", "github"], ["data", "data"], ["supplemental", "supplement"],
+  ["slides", "slides"], ["poster", "poster"], ["video", "video"], ["shareit", "SharedIt"],
+];
+const BADGES = [
+  ["highlycited", "https://drganghe.github.io/files/images/highly-cited-paper-badge.png", "ESI Highly Cited Paper"],
+  ["hotpaper", "https://drganghe.github.io/files/images/hot-paper-badge.png", "ESI Hot Paper"],
+];
+const EXTRA = [["awards", "Award"], ["mediacoverage", "Coverage"], ["invitedpresentation", "Invited presentation"]];
+%>
+<div class="pub-listing list">
+<% for (const item of items) {
+  const isoDate = item.date ? String(item.date) : (item.year ? item.year + "-01-01" : "");
+  const title = item.path
+    ? `<a href="${item.path}">${item.title}</a>`
+    : item.title;
+  const badges = BADGES.filter(([k]) => item[k])
+    .map(([, src, alt]) => ` <img src="${src}" title="${alt}" alt="${alt}" width="18" class="pub-badge">`).join("");
+  const links = LINKS.filter(([k]) => item[k])
+    .map(([k, label]) => `<span class="pub-link">&#91;<a href="${item[k]}" target="_blank" rel="noopener">${label}</a>&#93;</span>`)
+    .join("");
+  const venue = [item.journal ? `<em class="pub-journal">${item.journal}</em>` : "", item.year]
+    .filter(Boolean).join(", ");
+%>
+<div class="pub-item" <%= metadataAttrs(item) %>>
+<p class="pub-title"><span class="listing-title d-none"><%- item.title %></span><span class="listing-date d-none"><%= isoDate %></span>“<%= title %>”<%= badges %></p>
+<p class="pub-authors"><span class="listing-author"><%= item.authors %></span><% if (links) { %> <span class="pub-links"><%= links %></span><% } %></p>
+<% if (venue) { %><p class="pub-venue"><%= venue %>.</p>
+<% } %><% for (const [k, label] of EXTRA) { if (item[k]) { %><p class="pub-extra"><span class="pub-label"><%= label %>:</span> <%- item[k] %></p>
+<% } } %></div>
+<% } %>
+</div>

@@ -1,0 +1,467 @@
+% !TEX TS–program = pdflatexmk
+
+\let\nofiles\relax
+
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{mathabx}
+\usepackage{fancyhdr}             % for better headers/footers
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage[backend=biber,doi=false,url=false,
+           bibstyle=numeric,sorting=ydnt,sortcites=true,natbib=true,defernumbers=true,
+           maxbibnames=99,giveninits=true,uniquename=false]{biblatex}
+           \setlength\bibitemsep{8pt}
+\addbibresource{../research/papers.bib}
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}%
+}
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+  {\textbf{#1}}
+  {#1}%
+\ifitemannotation{first}
+  {\textsuperscript{*}}
+  {}%
+\ifitemannotation{student}
+  {$^\dagger$}
+  {}%
+\ifitemannotation{corresponding}
+  {$^\ddagger$}
+  {}%
+}%%
+\DeclareFieldFormat{addendum}{{\textbf{#1}}}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{8pt}
+      \setlength{\parsep}{2pt} \setlength{\parskip}{2pt}
+      \setlength{\topsep}{2pt} \setlength{\partopsep}{2pt} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+      
+\newenvironment{list2}{
+  \begin{list}{\footnotesize$\blackdiamond$}{%
+      \setlength{\itemsep}{8pt}
+      \setlength{\parsep}{2pt} \setlength{\parskip}{2pt}
+      \setlength{\topsep}{2pt} \setlength{\partopsep}{2pt} 
+      \setlength{\leftmargin}{0.2in}
+      }}{\end{list}}
+
+\renewcommand\labelitemi{\footnotesize$\blackdiamond$}
+\setlist[1]{itemsep=8pt, parsep=2pt,  topsep=2pt, partopsep=2pt, leftmargin=0.2in}
+
+
+
+
+% -------------------------------
+% Headers and Footers
+% -------------------------------
+
+% All pages after the first will have your name and page number in the
+% upper right corner; all pages will have the date of compilation (the
+% latest update) in the bottom right corner. You can move these.
+
+\fancypagestyle{first}{
+   \fancyhead[R]{}
+   \fancyhead[L]{}
+   \fancyfoot[R]{{\itshape \thepage \ of \pageref{LastPage}}}
+   \fancyfoot[L]{}
+   \fancyfoot[C]{\itshape Updated: \today}
+   \renewcommand{\headrulewidth}{0.0pt}
+   \renewcommand{\footrulewidth}{0.0pt}}
+
+\fancypagestyle{rest}{
+   \fancyhead[R]{}
+   \fancyhead[L]{}
+   \fancyfoot[R]{{\itshape \thepage \ of \pageref{LastPage}}}
+   \fancyfoot[L]{}
+   \fancyfoot[C]{}
+   \renewcommand{\headrulewidth}{0.0pt}
+   \renewcommand{\footrulewidth}{0.0pt}}
+
+\pagestyle{rest}
+
+\begin{document}
+\thispagestyle{first}
+
+\name{\Large Gemma E. Moran}
+
+\begin{resume}
+
+
+
+\section{\sc Contact Information}
+475 Hill Center, 110 Frelinghuysen Road, Piscataway, NJ 08854\\
+Primary email: \href{mailto:gm845@stat.rutgers.edu}{gm845@stat.rutgers.edu} \\
+Secondary email: \href{mailto:gem.e.moran@gmail.com}{gem.e.moran@gmail.com} \\
+Website: \url{https://www.gemma-moran.com} \\
+
+
+\section{\sc Employment}
+
+{\bf Statistics Department, Rutgers University} \hfill Piscataway, NJ, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] {Assistant Professor (tenure-track)} \hfill September 2023 - present \\
+\end{list1}
+
+
+{\bf Data Science Institute, Columbia University} \hfill New York, NY, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] { Postdoctoral Research Scientist} \hfill August 2019 - July 2023\\
+Supervisor: David Blei
+\end{list1}
+
+\section{\sc Education}
+
+
+{\bf The Wharton School, University of Pennsylvania} \hfill Philadelphia, PA, USA\\
+%{\em Department of Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D. Statistics \hfill August 2014 - May 2019\\
+Thesis Title: ``Bayesian Approaches for Modeling Variation''\\
+Thesis Advisors: Edward George and Veronika Ro\v{c}kov\'{a}
+\end{list1}
+
+{\bf The University of Sydney}\hfill Sydney, NSW, Australia\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.Sc. Advanced Mathematics (First Class Honours)\hfill March 2010 - November 2013 \\
+Majors: Mathematics, Statistics\\
+Thesis Advisor: John Ormerod
+%Thesis: \emph{Combining Markov chain Monte Carlo and}\\ 
+%\emph{variational Bayes methods in model selection for logistic regression}
+\end{list1}
+
+\section{\sc Honors and Awards} 
+\begin{itemize}
+  \item Visiting Scholar, The University of Sydney Mathematical Research Institute \hfill 2026
+\item Lindley Prize, International Society for Bayesian Analysis \hfill 2024
+\item Rising Star in Data Science, University of Chicago \hfill 2022
+\item Poster Award, International Society for Bayesian Analysis \hfill 2022
+\item Donald S. Murray Prize for excellence in teaching, Statistics Department, Wharton \hfill 2018
+\item Honorable Mention for Best Talk at the Bayesian Young Statisticians Meeting \hfill 2018
+\item Wharton Doctoral Program Fellowship \hfill 2014
+\item The George Allen Scholarship for Mathematical Statistics, the University of Sydney \hfill 2013
+\end{itemize}
+
+\section{\sc Grants}
+\begin{itemize}
+    \item  NIH Grant 1R21HL181649 \hfill 2025-2027
+    \begin{itemize}
+      \item PI: Anandi Krishnan, Co-Investigator: Gemma Moran
+    \end{itemize}
+    \item Rutgers Cyberinfrastructure and AI for Science and Society (CASS) Award  \hfill 2024 
+    \begin{itemize}
+      \item PI: Anandi Krishnan, Co-PI: Gemma Moran
+    \end{itemize}
+  \end{itemize}
+
+
+\newpage
+\section{{\sc Selected Peer-Reviewed Publications} \\[4pt]
+{\small \normalfont $^*$ indicates equal contributions; $^\dagger$ student advisee}}
+ 
+ \nocite{*}
+
+\printbibliography[heading=none, keyword=peerjournal]
+
+ 
+% \begin{enumerate}
+% \item \underline{Moran, G. E.}, Ro\v{c}kov\'{a}, V., and George, E. I. (2021) ``Spike-and-Slab Lasso Biclustering.'' {\em Annals of Applied Statistics}, 15(1): 148-173.
+% \item Bai, R., \underline{Moran, G. E.}, Antonelli, J., Chen, Y.,  Boland, M. R. (2020)``Spike-and-Slab Group Lassos for Grouped Regression and Sparse Generalized Additive Models.''  {\em Journal of the American Statistical Association}, 1-14. \href{https://arxiv.org/abs/1903.01979}{[arXiv:1903.01979]}
+%\item \underline{Moran, G. E.}, Ro\v{c}kov\'{a}, V. and George, E. I., (2019), ``Variance prior forms for high-dimensional Bayesian variable selection.'' {\em Bayesian Analysis}, 14(4), 1091-1119. \href{https://arxiv.org/abs/1801.03019}{[arXiv:1801.03019]}
+%\item Ro\v{c}kov\'{a}, V., \underline{Moran, G. E.,} and George, E. I., (2016),  ``Determinantal Regularization for Ensemble Variable Selection.''  {\em Proceedings of the 19\textsuperscript{th} International Conference on Artificial Intelligence and Statistics (AISTATS)}, pages 1105-1113, Cadiz, Spain.
+%\end{enumerate} 
+
+\section{{\sc Manuscripts} \\[4pt]
+{\small \normalfont $^*$ indicates equal contributions; $^\dagger$ student advisee}}
+
+ \printbibliography[heading=none, keyword=unpublished]
+
+%\begin{enumerate}[resume]
+%\item \underline{Moran, G. E.}, Sridhar, D., Wang, Y., and Blei, D. (2021) ``Identifiable Variational Autoencoders via Sparse Decoding.'' {\em Submitted.} \href{https://arxiv.org/abs/2110.10804}{[arXiv:2110.10804]}
+%\item  \underline{Moran, G. E.}, Cunningham, J. P., and Blei, D. (2021) ``Posterior predictive null checks.'' 
+%\item \underline{Moran, G. E.} and George, E. I. (2021) ``Nonlinear factor analysis with BART.''
+%\item  \underline{Moran, G. E.}, Ranganath, R., and Blei, D. (2021) ``Population predictive checks.'' 
+%\end{enumerate} 
+
+
+
+
+\section{\sc Presentations}
+
+{\bf Invited Seminars}
+
+\begin{list2}
+\item ``Bayesian Model Criticism: From Holdout Checks to Model Comparison''
+\begin{itemize}
+  \item Statistics Seminar, University of Kentucky, March 2026.
+\end{itemize}
+\end{list2}
+
+\begin{list2}
+\item ``Identifiable deep generative models for multi-study data''
+\begin{itemize}
+  \item Statistics Seminar, University of South Carolina, November 2025.
+  \item Statistics Seminar, Cornell University, November 2025.
+  \item Statistics Seminar, Ohio State University, March 2025.
+\end{itemize}
+\item ``Identifiable variational autoencoders via sparse decoding.'' 
+  \begin{itemize}
+    \item Biostatistics/Biomedical Informatics/Big Data (B3D) Seminar, Harvard, April 2023.
+    \item Data Science Seminar, University of Chicago, February 2023.
+    \item Econometrics and Statistics Seminar, Chicago Booth, February 2023.
+    \item Biotatistics Seminar, Columbia University, February 2023.
+    \item Statistics Seminar, Rutgers, February 2023.
+    \item Statistics Seminar, University of Connecticut - Storrs, February 2023.
+    \item Data Science and Operations Seminar, USC Marshall, February 2023.
+    \item Statistics Seminar, Boston University, January 2023.
+    \item Statistics Seminar, Duke University, January 2023.
+    \item Statistics Seminar, University of Michigan, January 2023.
+    \item Statistics Seminar, University of Wisconsin - Madison, January 2023.
+    \item Machine Learning Seminar, Microsoft Research New England, December 2021.
+    \item Math and Data Seminar, New York University, October 2021.
+  \end{itemize}
+\end{list2}
+
+{\bf Conferences}
+
+\begin{list2}
+
+
+\item ``Nonlinear Multi-Study Factor Analysis.'' (Invited Talk) Workshop on Identifiable Representation Learning. Banff International Research Station. Banff, Canada. October 2026.
+
+\item ``Nonlinear Multi-Study Factor Analysis.'' (Invited Talk) Workshop on Collaborative Research at the Intersection of Statistics and Engineering. University of Pennsylvania, Philadelphia, PA, USA. August 2026.
+
+\item ``Aggregated Posterior Predictive Checks'' (Invited Talk) Joint Statistical Meetings, Boston, MA, USA. August 2026.
+
+\item ``Nonlinear Multi-Study Factor Analysis.'' (Invited Talk) International Society for Bayesian Analysis World Meeting. Nagoya, Japan. July 2026.
+
+\item ``From causal representation learning to multi-study genomics'' (Invited Talk) Causality and Machine Learning Workshop. Isaac Newton Institute, Cambridge University, UK. June 2026.
+
+
+\item ``Nonlinear Multi-Study Factor Analysis.'' (Invited Talk) Maryland Statistical Symposium, University of Maryland, College Park, MD, USA. December 2025.
+
+\item ``Nonlinear Multi-Study Factor Analysis.'' (Invited Talk) International Day of Women in Statistics \& Data Science Conference, Online. October 2025.
+
+\item ``Identifiable deep generative models for multi-study data.'' (Invited Talk) Joint Statistical Meetings, Nashville, TN, USA. August 2025. 
+
+\item ``Holdout Predictive Checks for Bayesian Model Checking.'' (Invited Talk) Objective Bayes Methodology Conference, Athens, Greece. June 2025. 
+
+
+\item ``Identifiable deep generative models for multi-study data.'' (Invited Talk) Frontiers of Bayesian Inference and Data Science (BIRS-CMO), Oaxaca, Mexico. September 2024. 
+
+\item ``Identifiable deep generative models for multi-study data.'' (Invited Talk) Joint Statistical Meetings, Portland, OR, USA. August 2024. 
+
+\item ``Holdout Predictive Checks for Bayesian Model Checking.'' (Invited Talk) Joint Conference on Statistics and Data Science, Kunming, China. July 2024.
+
+\item ``Identifiable deep generative models for multi-study data.'' International Conference on Frontiers of Data Science, Hangzhou, China. July 2024.
+
+\item ``Spike-and-Slab Lasso Biclustering.'' (Invited Talk) New England Statistical Symposium, Storrs, CT, USA. May 2024.
+
+\item ``Identifiable Deep Generative Models via Sparse Decoding.'' (Invited Talk) First Workshop on Causal Representation Learning at the Conference on Uncertainty in Artificial Intelligence (UAI), Eindhoven, Netherlands. August 2022. 
+
+\item ``The Posterior Predictive Null.'' (Poster) International Society for Bayesian Analysis World Meeting, Montreal, Canada. June 2022. {\bf Poster Award (top 10\% of posters)}
+
+\item ``Identifiable deep generative models via sparse decoding.'' (Invited Talk) International Chinese Statistical Association Applied Statistics Symposium, Gainesville, FL, USA. June 2022.
+
+\item ``Identifiable variational autoencoders via sparse decoding.'' (Invited Talk) CMStatistics, London, UK. December 2021.
+
+\item ``Spike-and-Slab Lasso Biclustering.'' Joint Statistical Meetings, Vancouver, BC, Canada. August 2018.
+
+\item ``Spike-and-Slab Lasso Biclustering.'' Bayesian Young Statisticians Meeting, University of Warwick, UK. July 2018. {\bf Honorable Mention for Best Talk}
+
+\item ``On variance estimation for Bayesian variable selection.'' (Poster) International Society for Bayesian Analysis World Meeting, Edinburgh, Scotland. June 2018. 
+
+\item ``Independence Variance Priors for Penalized Likelihood Variable Selection.'' Joint Statistical Meetings, Baltimore, MA. July 2017. 
+
+\end{list2}
+
+\section{\sc Software}
+\begin{list2}
+\item  \texttt{SSLB} (R Package) \textbf{Moran, G. E.} \href{https://github.com/gemoran/SSLB}{[gemoran/SSLB]}
+\item \texttt{SSLASSO} (R Package) Ro\v{c}kov\'{a}, V. and \textbf{Moran, G. E.} \href{https://CRAN.R-project.org/package=SSLASSO}{[CRAN.R-project.org/package=SSLASSO]}
+\item \texttt{EMVS} (R Package) Ro\v{c}kov\'{a}, V. and \textbf{Moran, G. E.} \href{https://CRAN.R-project.org/package=EMVS}{[CRAN.R-project.org/package=EMVS]}
+\end{list2}
+
+
+\section{\sc Professional Activities}
+\begin{list2}
+\item Co-Organizer, NeurIPS Workshop on Interpretability as a Science, 2026.
+\item Scientific Committee, International Society for Bayesian Analysis World Meeting 2026.
+\item Area Chair, Uncertainty in Artificial Intelligence 2025, 2026. 
+\item Workshop Co-Chair, International Joint Conference on Artificial Intelligence 2025.
+\item Organizer, Invited Session at International Conference on Frontiers of Data Science (Hangzhou, China) 2024.
+% \item Co-Organizer (2016, 2017) Annual Women in Business Academia Conference, Philadelphia, PA
+% \item Board member (2015-2017), {Wharton Society for the Advancement of Women in Business Academia}
+\item External Reviewer for \emph{Journal of the American Statistical Association, Journal of the Royal Statistical Society (Series B), Biometrika, Journal of Machine Learning Research, Transactions of Machine Learning Research, Statistical Science, Biometrics, Journal of Computational and Graphical Statistics, Bayesian Analysis, AISTATS (Selected as a ``Top Reviewer'' in 2022), NeurIPS, ICML, CLeaR, Statistics and Computing, International Statistical Review, Statistical Methods in Medical Research, Briefings in Bioinformatics}
+\end{list2}
+
+\section{\sc Teaching}
+{\bf Instructor}
+\begin{list1}
+\item[] Rutgers University
+\begin{list2}
+\item STAT486: Applied Statistical Learning (Spring 2026)
+\end{list2}
+\begin{list2}
+\item MSDS597: Data Wrangling with Python (Spring 2025)
+\begin{itemize}
+  \item {\it Major revision of course - developed modules on visualization, git and GitHub, text data, and big data.} \href{https://moran-teaching.github.io/msds597-website/}{[website]}
+\end{itemize}
+\item STAT588: Financial Data Mining (Spring 2024)
+\item STAT690: Special Topics Course on Generative Models (Spring 2024)
+\begin{itemize}
+  \item {\it New course - developed material on modern generative models and causal representation learning}
+\end{itemize} 
+\item MSDS534: Statistical Learning for Data Science (Fall 2023, 2024, 2025)
+\begin{itemize}
+  \item {\it Complete revision of course - co-developed new syllabus and material on deep learning, conformal inference, permutation testing and causal inference.} \href{https://moran-teaching.github.io/msds534-website/}{[website]}
+\end{itemize}
+\end{list2}
+\end{list1}
+
+% \section{\sc Service}
+% \begin{list1}
+% \item[] Rutgers University
+% \begin{list2}
+% \item Committees
+% \begin{itemize}
+%   \item Website (Chair) (2025)
+%   \item Website (2024)
+%   \item Awards (2025)
+%   \item Masters admissions (2024, 2025)
+%   \item Masters exam (2023, 2024, 2025)
+%   \item Retreat (2023, 2024, 2025)
+% \end{itemize}
+% \item Reviewer for Rutgers and Nokia Bell Lab's PhD Student Competition (2024)
+% \end{list2}
+% \end{list1}
+
+% \section{\sc Advising}
+% \begin{list1}
+% \item[] Rutgers University
+% \begin{list2}
+% \item PhD advising
+% \begin{itemize}
+%   \item Zern Ke
+%   \item Shweta Dutta
+%   \item Arash Sodagartojgi (co-advisor)
+%   \item Mingshi Cui (co-advisor)
+% \end{itemize}
+% \item PhD committee member
+% \begin{itemize}
+%   \item Ama Ampadu-Kissi-Owusu
+%   \item Yunjiao Bai 
+%   \item Rituparna Dey
+% \end{itemize}
+% \item Masters capstone
+% \begin{itemize}
+%   \item Phan Nguyen Huong (Valerie) Le
+%   \item Ruth Sharon Raju
+%   \item Thomas Stranick
+%   \item Tanvi Shinde
+%   \item Ivanshu Kaushik
+%   \item Anton Vernikov
+% \end{itemize}
+% \end{list2}
+% \end{list1}
+
+
+
+
+
+% {\bf Teaching Assistant}
+% \begin{list1}
+% \item[] Columbia University
+% \begin{list2}
+% \item STCS6701: Probabilistic Models and Machine Learning (Fall 2022)
+% \end{list2}
+
+% \item[] The Wharton School, University of Pennsylvania
+% \begin{list2}
+% \item STAT621: Accelerated Regression Analysis for Business (Fall 2018)
+% \item STAT613: Regression Analysis for Business (Fall 2017, Fall 2018)
+% \item STAT422: Predictive Analytics (Spring 2017)
+% \item STAT101: Introductory Business Statistics (Fall 2016)
+% \item STAT102: Introductory Business Statistics (Spring 2019)
+% \end{list2}
+% \end{list1}
+
+% \vspace{-0.1cm}
+
+% {\bf Recitation Instructor}
+% \begin{list1}
+% \item[] The Wharton School, University of Pennsylvania 
+% \begin{list2}
+% \item STAT111: Introductory Statistics (Spring 2018). Rating: 3.1/4
+% \end{list2}
+% \end{list1}
+
+% \vspace{0.25cm}
+
+% \begin{list1}
+% \item[] The University of Sydney
+% \begin{list2}
+% \item MATH1015: Biostatistics (Semester 1, 2013)
+% \item MATH1005: Statistics (Semester 2, 2013)
+% \end{list2}
+% \end{list1}
+
+% \vspace{-0.1cm}
+
+% {\bf Lecturer}
+% \begin{list1}
+% \item[] Wharton Moneyball Academy (Summer 2017, 2018)\\[2pt]
+%  {\it Contributed to and taught course on data analysis in R as part of
+% summer program in statistics and sports for high school students}
+% \end{list1}
+
+
+
+% \section{\sc Professional Experience}
+
+% {\bf Computational Informatics Division, CSIRO} \hfill Sydney, NSW, Australia\\
+% \vspace*{-.1in}
+% \begin{list1}
+% \item[] {\it Summer research scholar} \hfill  11/2013 - 02/2014\\[3pt]
+% Project: {Markov chain Monte Carlo and generalized linear models for RNA-seq data}
+% \end{list1}
+
+% {\bf Australian Mathematical Sciences Institute} \hfill Sydney, NSW, Australia\\
+% \vspace*{-.1in}
+% \begin{list1}
+% \item[] {\it Summer research scholar} \hfill  12/2012 - 02/2013\\[3pt]
+% Project: Theory for Gaussian variational approximation of Bayesian generalized linear models
+% \end{list1}
+
+
+\end{resume}
+\end{document}
+
+
+

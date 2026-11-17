@@ -1,0 +1,129 @@
+# ---------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------
+# Quarto
+# ---------------------------------------------------------------
+/.quarto/
+**/*.quarto_ipynb
+# Stray output from previewing files in place (the real output goes to docs/)
+/site_libs/
+/README.html
+*_files/
+
+# Blog is hidden for now (also excluded from rendering in _quarto.yml).
+# Delete this line to start tracking it again.
+/blog/
+
+# ---------------------------------------------------------------
+# LaTeX
+# ---------------------------------------------------------------
+# PDFs are NOT ignored: cv/moran_cv.pdf is published on the site.
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.dvi
+*.xdv
+*-converted-to.*
+# bibliography
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+# build tools
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+# index / glossary
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+*.xdy
+# misc packages
+_minted*
+*.pyg
+*.thm
+*.loa
+*.lol
+# editor backups (latexindent, TeXShop, etc.)
+*.bak
+*.sav
+*~
+
+# ---------------------------------------------------------------
+# Published site: docs/ is Quarto's output-dir and MUST be tracked.
+# Keep this block last. It overrides the rules above and two rules in
+# ~/.gitignore_global that would otherwise hide parts of the site:
+#   docs/    (pkgdown)  -> hides the whole site
+#   *.[1-9]  (LaTeX)    -> hides site_libs/quarto-contrib/academicons-1.9.2/
+# ---------------------------------------------------------------
+!/docs/
+!/docs/**
+/docs/**/.DS_Store

@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "teaching/teaching.html",
+    "href": "teaching/teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Spring 2026\nThis class explores modern statistic statistical learning in four major areas: (1) simulation/resampling based statistical inference, (2) supervised statistical learning, (3) unsupervised statistical learning, and (4) missing data and causal inference."
+  },
+  {
+    "objectID": "teaching/teaching.html#undergraduate",
+    "href": "teaching/teaching.html#undergraduate",
+    "title": "Teaching",
+    "section": "",
+    "text": "Spring 2026\nThis class explores modern statistic statistical learning in four major areas: (1) simulation/resampling based statistical inference, (2) supervised statistical learning, (3) unsupervised statistical learning, and (4) missing data and causal inference."
+  },
+  {
+    "objectID": "teaching/teaching.html#masters",
+    "href": "teaching/teaching.html#masters",
+    "title": "Teaching",
+    "section": "Masters",
+    "text": "Masters\n\nMSDS-534: Statistical Learning for Data Science\n\n\n\n\n\nFall 2025,   Fall 2024,   Fall 2023\nThis class covers the basics of deep learning from a statistical perspective, including feedforward neural networks, convolutional neural networks, recurrent neural networks, transformers, VAEs and diffusion models. Then, we study uncertainty quantification using conformal inference. Finally, we cover hypothesis testing with deep learning.\n\n\n\n\nMSDS-597: Data Wrangling with Python\n\n\n\n\n\nSpring 2025\nThis course provides an introduction to the principles and tools to retrieve, “tidy,” clean, and visualize data in preparation for statistical analysis. Principles of reproducibility and reusability are emphasized. It teaches techniques to wrangle and explore data."
+  },
+  {
+    "objectID": "research/pub-listing.html",
+    "href": "research/pub-listing.html",
+    "title": "Publications",
+    "section": "",
+    "text": "See my Google scholar for the most recent list.\n* equal contribution; † student advisee"
+  },
+  {
+    "objectID": "research/pub-listing.html#preprints",
+    "href": "research/pub-listing.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\n\n\n\n\nNonlinear multi-study sparse factor analysisJan 1, 2026“Nonlinear multi-study sparse factor analysis”\n\n\nG. E. Moran, A. Krishnan\n\n\narXiv preprint arXiv:2601.18128, 2026.\n\n\n\n\nDistributional Balancing with Machine Learning for Clinical Trial Augmentation Using Real-World DataJan 1, 2026“Distributional Balancing with Machine Learning for Clinical Trial Augmentation Using Real-World Data”\n\n\nZ. Ke†, M. Cui†, G. Moran, J. Cabrera\n\n\narXiv preprint arXiv:2609.23524, 2026.\n\n\n\n\nAggregated Posterior Predictive Checks for Generative ModelingJan 1, 2026“Aggregated Posterior Predictive Checks for Generative Modeling”\n\n\nS. Dutta†, G. E. Moran\n\n\narXiv preprint arXiv:2609.20999, 2026.\n\n\n\n\nStochastic weather generators for high-frequency wind vector time seriesJan 1, 2026“Stochastic weather generators for high-frequency wind vector time series”\n\n\nM. Cui, K. Eng, J. T. Greene, Z. Ke, A. Sodagartojgi, Z. Xia, G. E. Moran, M. L. Stein\n\n\narXiv preprint arXiv:2606.09941, 2026.\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/pub-listing.html#peer-reviewed-publications",
+    "href": "research/pub-listing.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "Peer-reviewed Publications",
+    "text": "Peer-reviewed Publications\n\n\n\n\nCan Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on VisionJun 1, 2026“Can Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on Vision”\n\n\nG. Chatzoudis, K. D. Polyzos, Z. Li, D. Gu, G. E. Moran, H. Wang, D. N. Metaxas\n\n\nProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2026.\n\n\n\n\n“All Models Are Right”: The Blind Spots of Posterior Predictive Checks in Simulation-Based InferenceJan 1, 2026““All Models Are Right”: The Blind Spots of Posterior Predictive Checks in Simulation-Based Inference”\n\n\nJ. Linhart, G. E. Moran, D. Blei\n\n\nNeurIPS Workshop Sim2Science: ML with Imperfect Scientific Models, 2026.\n\n\n\n\nToward Interpretable Deep Generative Models via Causal Representation LearningJan 1, 2026“Toward Interpretable Deep Generative Models via Causal Representation Learning”\n\n\nG. E. Moran, B. Aragam\n\n\nJournal of the American Statistical Association, 2026.\n\n\n\n\nBeyond Interpretability: When, Why, and How Sparse Autoencoders Enable Label-Free Visual SteeringJan 1, 2026“Beyond Interpretability: When, Why, and How Sparse Autoencoders Enable Label-Free Visual Steering”\n\n\nG. Chatzoudis, Z. Li, G. E. Moran, H. Wang, D. N. Metaxas\n\n\nNeural Information Processing Systems, 2026.\n\n\n\n\nTowards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation modelsJan 1, 2025“Towards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation models”\n\n\nK. Donhauser, K. Ulicna, G. E. Moran, A. Ravuri, K. Kenyon-Dean, C. Eastwood, J. Hartford\n\n\nInternational Conference on Machine Learning, 2025.\n\n\n\n\nHoldout predictive checks for Bayesian model criticismJan 1, 2024“Holdout predictive checks for Bayesian model criticism”\n\n\nG. E. Moran, D. M. Blei, R. Ranganath\n\n\nJournal of the Royal Statistical Society Series B: Statistical Methodology, 2024.\n\n\n\n\nGenetic Architectures of Medical Images Revealed by Registration of Multiple ModalitiesJan 1, 2024“Genetic Architectures of Medical Images Revealed by Registration of Multiple Modalities”\n\n\nS. F. Friedman, G. E. Moran, M. Rakic, A. Phillipakis\n\n\nBioinformatics and Biology Insights, 2024.\n\n\n\n\nThe posterior predictive nullJan 1, 2023“The posterior predictive null”\n\n\nG. E. Moran, J. P. Cunningham, D. M. Blei [code]\n\n\nBayesian Analysis, 2023.\n\n\n\n\nSpike-and-slab group lassos for grouped regression and sparse generalized additive modelsJan 1, 2022“Spike-and-slab group lassos for grouped regression and sparse generalized additive models”\n\n\nR. Bai*, G. E. Moran*, J. L. Antonelli*, Y. Chen, M. R. Boland\n\n\nJournal of the American Statistical Association, 2022.\n\n\n\n\nIdentifiable Deep Generative Models via Sparse DecodingJan 1, 2022“Identifiable Deep Generative Models via Sparse Decoding”\n\n\nG. E. Moran, D. Sridhar, Y. Wang, D. M. Blei [code][software]\n\n\nTransactions on Machine Learning Research, 2022.\n\n\n\n\nSpike-and-slab lasso biclusteringJan 1, 2021“Spike-and-slab lasso biclustering”\n\n\nG. E. Moran, V. Ročková, E. I. George [code][software]\n\n\nThe Annals of Applied Statistics, 2021.\n\n\n\n\nVariance prior forms for high-dimensional Bayesian variable selectionJan 1, 2019“Variance prior forms for high-dimensional Bayesian variable selection”\n\n\nG. E. Moran, V. Ročková, E. I. George\n\n\nBayesian Analysis, 2019.\n\n\n\n\nDeterminantal regularization for ensemble variable selectionJan 1, 2016“Determinantal regularization for ensemble variable selection”\n\n\nV. Ročková, G. Moran, E. George\n\n\nArtificial Intelligence and Statistics, 2016.\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/pub-listing.html#technical-reports",
+    "href": "research/pub-listing.html#technical-reports",
+    "title": "Publications",
+    "section": "Technical Reports",
+    "text": "Technical Reports\n\n\n\n\nSerendipity based recommender system for perovskites material discovery: balancing exploration and exploitation across multiple modelsJan 1, 2022“Serendipity based recommender system for perovskites material discovery: balancing exploration and exploitation across multiple models”\n\n\nV. Shekar, V. Yu, B. J. Garcia, D. B. Gordon, G. E. Moran, D. M. Blei, L. M. Roch, A. García-Durán, M. Ani Najeeb, M. Zeile, P. W. Nega, Z. Li, M. A. Kim, E. M. Chan, A. J. Norquist, S. Friedler, J. Schrier\n\n\nChemRxiv, 2022.\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gemma Moran",
+    "section": "",
+    "text": "CV\n  \n  \n    \n     E-mail\n  \n  \n      Google Scholar\n  \n  \n    \n     GitHub\n  \n\n  \n  \nI am a tenure-track Assistant Professor in the Rutgers Statistics Department. I am also a visiting researcher at the Flatiron Institute.\nPreviously, I was a postdoc at the Columbia Data Science Institute, working with David Blei. I received my PhD in Statistics from the University of Pennsylvania, advised by Edward George and Veronika Rockova.\nMy recent research interests include:\n\ndeveloping identifiable and interpretable deep generative models;\nimproved tools for calibrated model criticism.\n\n\nRutgers PhD students\nSend me an email if you’d like to chat about research!\n\n\nProspective PhD students\nPlease apply to the Rutgers Statistics PhD program and mention my name. Unfortunately I don’t have the bandwidth to reply to every email.\n\n\nMasters of Data Science students\n\nCapstone Projects\nRutgers MSDS students can use a final project from one of my MSDS classes as their capstone.\nFor capstones based on group projects, students will have to complete a revision independently using a different statistical method, different dataset, or a different simulation design, and submit both the initial group and final individual report.\nPlease take my MSDS-534 (Statistical Learning for Data Science) course if you are interested in doing an independent research project with me."
+  },
+  {
+    "objectID": "resources/resources.html",
+    "href": "resources/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Writing\nScientific writing is an extremely important skill to develop.\nI regularly re-read this article – everyone should read!\n\nThe Science of Scientific Writing by Gopen and Swan (link).\n\n\n\nCommunication\nLearning how to present your research is also extremely important.\n\nTrevor Campbell has a great talk on How to Explain Things"
+  }
+]
