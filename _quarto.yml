@@ -51,7 +51,7 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/gemoran.github.io
+  repo-url: https://github.com/gemoran/gemoran.github.io
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
